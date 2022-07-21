@@ -3,19 +3,21 @@
 require_once './classes/Voiture.php';
 
 $voiture1 = new Voiture();
-$voiture1->couleur = "rouge";
+// $voiture1->couleur = "rouge";
 // $voiture1->marque = "bmw";
-$couleurVoiture1 = $voiture1->afficherCouleur();
+// $couleurVoiture1 = $voiture1->afficherCouleur();
 
 $voiture1->setMarque("bmw");
 echo $voiture1->getMarque();
+$voiture1->setColor("blue");
+echo $voiture1->getcolor();
 
 
 $voiture2 = new Voiture();
 $voiture2->couleur = "vert";
 $voiture2->marque = "ferrari";
 $voiture2->demarrer();
-echo $voiture2->couleur;
+
 
 var_dump($voiture1);
 echo "<br />";
