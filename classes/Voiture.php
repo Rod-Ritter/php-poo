@@ -9,7 +9,7 @@ class Voiture {
         echo "<p>la voiture démarre</p>";
     }
 
-    public function afficherCouleur() {
-        echo "<p>La voiture est de couleur" .$this->couleur . "</p>";
+    public function afficherCouleur():string {
+        return "<p>La voiture est de couleur " .$this->couleur . "</p>";
     }
 }
