@@ -1,6 +1,7 @@
 <?php
 
 require_once './classes/Voiture.php';
+require_once './functions/echoP.php';
 
 $voiture1 = new Voiture("blue");
 // $voiture1->couleur = "rouge";
@@ -8,15 +9,17 @@ $voiture1 = new Voiture("blue");
 // $couleurVoiture1 = $voiture1->afficherCouleur();
 
 $voiture1->setMarque("bmw");
-echo $voiture1->getMarque();
+echoP( $voiture1->getMarque());
 // $voiture1->setColor("blue");
-echo $voiture1->getcolor();
+echoP( $voiture1->getcolor());
 
 
 $voiture2 = new Voiture("red");
+echoP($voiture2->getcolor());
+
 // $voiture2->couleur = "vert";
-$voiture2->marque = "ferrari";
-$voiture2->demarrer();
+// $voiture2->marque = "ferrari";
+// $voiture2->demarrer();
 
 
 // var_dump($voiture1);
