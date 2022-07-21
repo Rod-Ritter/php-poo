@@ -4,8 +4,11 @@ require_once './classes/Voiture.php';
 
 $voiture1 = new Voiture();
 $voiture1->couleur = "rouge";
-$voiture1->marque = "bmw";
+// $voiture1->marque = "bmw";
 $couleurVoiture1 = $voiture1->afficherCouleur();
+
+$voiture1->setMarque("bmw");
+echo $voiture1->getMarque();
 
 
 $voiture2 = new Voiture();
