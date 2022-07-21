@@ -9,6 +9,10 @@ class Voiture {
     {
        $this->couleur = $couleur; 
     }
+    public function __destruct()
+    {
+        echo "I'm doomed...";
+    }
     // Méthode pour récupérer la marque
     public function getMarque(): string 
     {
