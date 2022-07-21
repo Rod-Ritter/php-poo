@@ -12,6 +12,7 @@ $voiture2 = new Voiture();
 $voiture2->couleur = "vert";
 $voiture2->marque = "ferrari";
 $voiture2->demarrer();
+echo $voiture2->couleur;
 
 var_dump($voiture1);
 echo "<br />";
