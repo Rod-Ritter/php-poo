@@ -9,8 +9,11 @@ $voiture1->marque = "bmw";
 $voiture2 = new Voiture();
 $voiture2->couleur = "vert";
 $voiture2->marque = "ferrari";
+$voiture2->demarrer();
 
 var_dump($voiture1);
-echo "<br>";
+echo "<br />";
 var_dump($voiture2);
+
+
 
