@@ -41,6 +41,6 @@ class Voiture {
 
     public function afficherCouleur() 
     {
-        return "<p>La voiture est de couleur " .$this->couleur . "</p>";
+        return "<p>La jolie voiture est de couleur " .$this->couleur . "</p>";
     }
 }
