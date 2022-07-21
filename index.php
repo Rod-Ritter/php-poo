@@ -5,6 +5,7 @@ require_once './classes/Voiture.php';
 $voiture1 = new Voiture();
 $voiture1->couleur = "rouge";
 $voiture1->marque = "bmw";
+$voiture1->afficherCouleur();
 
 $voiture2 = new Voiture();
 $voiture2->couleur = "vert";
