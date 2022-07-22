@@ -1,46 +1,35 @@
 <?php
 
-class Voiture {
-    private string $marque;
+class Voiture extends Vehicule
+{
     private string $couleur;
     public int $nbrRoues = 4;
 
     public function __construct(string $couleur)
     {
-       $this->couleur = $couleur; 
-    }
-    public function __destruct()
-    {
-        echo "I'm doomed...";
-    }
-    // Méthode pour récupérer la marque
-    public function getMarque(): string 
-    {
-        return $this->marque;
-    }
-    // Methode pour définir la marque 
-    public function setMarque(string $marque): void
-    {
-        $this->marque = $marque;
+        $this->couleur = $couleur;
     }
 
-    public function getColor(): string 
+    public function getCouleur(): string
     {
         return $this->couleur;
     }
 
-    public function setColor(string $couleur): void 
-    {
-        $this->couleur = $couleur;
+    // public function setCouleur(string $couleur): void {
+    //     $this->couleur = $couleur;
+    // }
+
+    public function demarrer() {
+        echo "<p>La voiture démarre</p>";
     }
 
-    public function demarrer() 
+    public function afficherCouleur(): string
     {
-        echo "<p>la voiture démarre</p>";
+        return "<p>La voiture est de couleur " . $this->couleur . "</p>";
     }
 
-    public function afficherCouleur() 
+    public function __destruct()
     {
-        return "<p>La jolie voiture est de couleur " .$this->couleur . "</p>";
+        echo "<p>I'm doomed...</p>";
     }
 }

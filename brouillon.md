@@ -3,14 +3,13 @@
 // $couleurVoiture1 = $voiture1->afficherCouleur();
 
 // $voiture1->setMarque("bmw");
-// echo $voiture1->getMarque();
-// // $voiture1->setColor("blue");
-// echo $voiture1->getcolor();
+// echoP( $voiture1->getMarque());
+// $voiture1->setColor("blue");
+// echoP( $voiture1->getcolor());
 
 
 // $voiture2 = new Voiture("red");
-// $voiture2->marque = "ferrari";
-// echo $voiture2->getMarque();
+// echoP($voiture2->getcolor());
 
 // $voiture2->couleur = "vert";
 // $voiture2->marque = "ferrari";
