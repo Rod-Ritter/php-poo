@@ -2,18 +2,28 @@
 
 class Voiture extends Vehicule
 {
-    private string $couleur;
     public int $nbrRoues = 4;
+    private string $typeCarrosserie;
 
-    public function __construct(string $couleur)
+    public function getTypeCarrosserie(): string 
     {
-        $this->couleur = $couleur;
+       return $this->typeCarrosserie;
     }
 
-    public function getCouleur(): string
+    public function setTypeCarrosserie(string $typeCarrosserie): void
     {
-        return $this->couleur;
+        $this->typeCarrosserie = $typeCarrosserie;
     }
+
+    // public function __construct(string $couleur)
+    // {
+    //     $this->couleur = $couleur;
+    // }
+
+    // public function getCouleur(): string
+    // {
+    //     return $this->couleur;
+    // }
 
     // public function setCouleur(string $couleur): void {
     //     $this->couleur = $couleur;
@@ -28,8 +38,8 @@ class Voiture extends Vehicule
         return "<p>La voiture est de couleur " . $this->couleur . "</p>";
     }
 
-    public function __destruct()
-    {
-        echo "<p>I'm doomed...</p>";
-    }
+    // public function __destruct()
+    // {
+    //     echo "<p>I'm doomed...</p>";
+    // }
 }
