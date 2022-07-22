@@ -7,6 +7,8 @@ spl_autoload_register(function ($className) {
 
 
 
+
+
 $voiture1 = new Voiture("orange");
 $voiture1->setMarque("BMW");
 $voiture1->setVitesse((50));
